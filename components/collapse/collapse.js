@@ -28,13 +28,11 @@ Component({
       }
     }
   },
-  lifetimes: {
-    created(){
-      this.children = []
-    }
+  created(){
+    this.children = []
   },
   methods: {
-    switch(name, expanded){
+    switch(name, expanded, child){
       const { accordion, value } = this.data
       if (!accordion) {
         name = expanded
@@ -43,8 +41,10 @@ Component({
       } else {
         name = expanded ? name : ''
       }
-      this.triggerEvent('change', name)
-      this.triggerEvent('input', name)
+      this.triggerEvent('change', {
+        name,
+        activeChild: child
+      })
     }
   },
   externalClasses: ['custom-class']
