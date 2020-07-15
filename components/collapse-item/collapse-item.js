@@ -17,18 +17,16 @@ Component({
     expanded: false,
     transition: false
   },
-  lifetimes: {
-    ready(){
-      this.updateExpanded()
-        .then(nextTick)
-        .then(() => {
-          const data = { transition: true }
-          if (this.data.expanded) {
-            data.contentHeight = 'auto'
-          }
-          this.setData(data)
-        })
-    }
+  ready(){
+    this.updateExpanded()
+      .then(nextTick)
+      .then(() => {
+        const data = { transition: true }
+        if (this.data.expanded) {
+          data.contentHeight = 'auto'
+        }
+        this.setData(data)
+      })
   },
   methods: {
     updateExpanded(){
@@ -97,7 +95,7 @@ Component({
       const index = this.parent.children.indexOf(this)
       const currentName = name == null ? index : name
 
-      this.parent.switch(currentName, !expanded)
+      this.parent.switch(currentName, !expanded, this)
     },
     onTransitionEnd(){
       if (this.data.expanded) {
@@ -105,6 +103,7 @@ Component({
           contentHeight: 'auto'
         })
       }
+      this.triggerEvent('transitionend', this)
     }
   },
   options: {
