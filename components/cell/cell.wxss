@@ -1,6 +1,7 @@
 .cell{
   display: flex;
   padding: 24rpx 32rpx;
+  background-color: #fff;
   font-size: 28rpx;
 }
 
