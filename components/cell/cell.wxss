@@ -28,12 +28,12 @@
 }
 
 .cell__label{
-  color: #313131;
+  color: #333;
 }
 
 .cell__value{
   text-align: right;
-  color: #626262;
+  color: #999;
 }
 
 .cell__right-icon{

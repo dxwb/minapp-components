@@ -17,9 +17,6 @@ Component({
       value: 'navigateTo'
     }
   },
-  data: {
-
-  },
   methods: {
     onClick(){
       if(this.data.href){
