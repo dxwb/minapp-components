@@ -1,0 +1,5 @@
+<view
+  class="custom-class{{value?' checked-class':''}}{{disabled?' disabled-class':''}}"
+  bindtap="onChange">
+  <slot />
+</view>

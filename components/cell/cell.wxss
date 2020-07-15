@@ -1,0 +1,41 @@
+.cell{
+  display: flex;
+  padding: 24rpx 32rpx;
+  font-size: 28rpx;
+}
+
+.cell--hover{
+  background-color: #eee;
+}
+
+.cell__icon{
+  margin-right: 5px;
+}
+
+.cell__icon:empty{
+  display: none;
+}
+
+.cell__label,
+.cell__value{
+  flex: 1;
+  overflow: hidden;
+}
+
+.cell__label:empty,
+.cell__value:empty{
+  display: none;
+}
+
+.cell__label{
+  color: #313131;
+}
+
+.cell__value{
+  text-align: right;
+  color: #626262;
+}
+
+.cell__right-icon{
+  margin-left: 5px;
+}

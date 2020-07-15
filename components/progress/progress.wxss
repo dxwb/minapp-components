@@ -1,0 +1,20 @@
+.progress{
+  padding: 3px;
+  border-radius: 100px;
+  background-color: #0b1969;
+}
+.body{
+  position: relative;
+  width: 50%;
+  height: 38rpx;
+  border-radius: 100px;
+  background-image: repeating-linear-gradient(60deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30rpx, rgba(255, 255, 255, .15) 30rpx, rgba(255, 255, 255, .15) 65rpx), linear-gradient(to right, #446bfd, #a249fd);
+}
+.body image{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 44rpx;
+  height: 44rpx;
+  transform: translateY(-50%);
+}

@@ -1,0 +1,10 @@
+<view class="radio custom-class {{value===name?'checked-class':''}} {{disabled?'disabled-class':''}}">
+  <radio-group bindchange="onChange">
+    <radio
+      class="native-radio"
+      disabled="{{disabled}}"
+      value="{{name}}"
+      checked="{{value===name}}" />
+  </radio-group>
+  <slot />
+</view>

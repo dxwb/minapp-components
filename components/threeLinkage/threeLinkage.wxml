@@ -1,0 +1,13 @@
+<view>
+  <picker
+    mode="multiSelector"
+    range="{{range}}"
+    range-key="label"
+    value="{{[l1Index, l2Index, l3Index]}}"
+    bindcolumnchange="changeColumn"
+    bindchange="changeVal">
+
+    <view>{{viewText}}</view>
+
+  </picker>
+</view>

@@ -1,0 +1,13 @@
+<view class="custom-class{{expanded?' custom-class-open':''}}">
+  <view class="title-class" bindtap="onClick">
+    <slot name="title" />
+  </view>
+  <view
+    class="collapse-item__wrap content-class"
+    style="height:{{contentHeight}};"
+    bindtransitionend="onTransitionEnd">
+    <view class="collapse-item__content">
+      <slot name="content" />
+    </view>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<view class="stepper">
+  <view
+    class="stepper__btn{{minusDisabled?' disabled':''}}"
+    hover-class="{{minusDisabled?'':'stepper__btn--hover'}}"
+    hover-start-time="20"
+    hover-stay-time="50"
+    bindtap="onMinus">-</view>
+
+  <input
+    class="stepper__input"
+    type="number"
+    disabled="{{disabled || inputDisabled}}"
+    value="{{value}}"
+    bindblur="onBlur" />
+
+  <view
+    class="stepper__btn{{plusDisabled?' disabled':''}}"
+    hover-class="{{plusDisabled?'':'stepper__btn--hover'}}"
+    hover-start-time="20"
+    hover-stay-time="50"
+    bindtap="onPlus">+</view>
+</view>
