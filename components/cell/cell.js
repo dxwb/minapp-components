@@ -4,7 +4,7 @@ Component({
       type: Boolean,
       value: true
     },
-    clickabled: {
+    clickable: {
       type: Boolean,
       value: false
     },
@@ -33,7 +33,8 @@ Component({
   },
   externalClasses: [
     'custom-class',
-    'icon-class'
+    'icon-class',
+    'right-icon-class'
   ],
   options: {
     multipleSlots: true

@@ -2,7 +2,7 @@
   class="cell custom-class"
   hover-start-time="20"
   hover-stay-time="50"
-  hover-class="{{clickabled?'cell--hover':''}}"
+  hover-class="{{clickable?'cell--hover':''}}"
   style="{{center?'align-items:center;':''}}"
   bindtap="onClick">
   <view class="cell__icon icon-class">
@@ -14,7 +14,7 @@
   <view class="cell__value">
     <slot />
   </view>
-  <view class="cell__right-icon">
+  <view class="cell__right-icon right-icon-class">
     <slot name="right-icon" />
   </view>
 </view>
