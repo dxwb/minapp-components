@@ -1,0 +1,17 @@
+.ring-progress{
+  position: relative;
+  background-color: #eee;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #ccc inset;
+}
+.inner{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px #ccc;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 20rpx;
+  letter-spacing: -2rpx;
+}

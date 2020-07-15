@@ -1,0 +1,13 @@
+<view
+  class="ring-progress custom-class"
+  style="width:{{width}}px;height:{{height}}px;">
+  <canvas
+    type="2d"
+    id="ring"
+    style="width:{{width}}px;height:{{height}}px;"></canvas>
+  <view
+    class="inner inner-class"
+    style="top:{{innerThickness}}px;left:{{innerThickness}}px;right:{{innerThickness}}px;bottom:{{innerThickness}}px;">
+    <slot />
+  </view>
+</view>
