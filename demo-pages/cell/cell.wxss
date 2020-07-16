@@ -1,0 +1,21 @@
+@import '/public/wxss/demo-page.wxss';
+
+.demo .icon{
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.demo .cell-custom{
+  background-color: #abc;
+}
+.demo .cell-custom2{
+  padding: 40rpx;
+  background-color: #acb;
+}
+.demo .cell-icon{
+  margin-right: 50rpx;
+}
+.demo .cell-right-icon{
+  margin-left: 50rpx;
+}

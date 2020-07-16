@@ -1,0 +1,15 @@
+page{
+  background-color: #f5f5f5;
+}
+.demo-list{
+  padding-bottom: 40rpx;
+}
+.demo + .demo{
+  margin-top: 40rpx;
+}
+.demo .title{
+  padding-left: 28rpx;
+  margin-bottom: 10rpx;
+  font-size: 24rpx;
+  color: #999;
+}

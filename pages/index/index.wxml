@@ -4,6 +4,6 @@
     href="/demo-pages/cell/cell"
     custom-class="cell-custom">
     <view slot="label">Cell</view>
-    <view>flex行</view>
+    <view>单元格</view>
   </cell>
 </view>

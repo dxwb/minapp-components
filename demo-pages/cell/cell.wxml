@@ -1,0 +1,79 @@
+<view class="demo-list">
+  <view class="demo">
+    <view class="title">基本用法</view>
+    <view class="content">
+      <cell>
+        <view slot="label">菜单</view>
+        <view>菜单</view>
+      </cell>
+    </view>
+  </view>
+
+  <view class="demo">
+    <view class="title">使用slot</view>
+    <view class="content">
+      <cell center>
+        <view slot="icon">
+          <image src="./icon-tuku.png" class="icon" />
+        </view>
+        <view slot="label">菜单</view>
+        <view>菜单</view>
+        <view slot="right-icon">
+          <image src="./icon-you.png" class="icon" />
+        </view>
+      </cell>
+    </view>
+  </view>
+
+  <view class="demo">
+    <view class="title">点击反馈</view>
+    <view class="content">
+      <cell clickable>
+        <view slot="label">菜单</view>
+        <view slot="right-icon">
+          <image src="./icon-you.png" class="icon" />
+        </view>
+      </cell>
+    </view>
+  </view>
+
+  <view class="demo">
+    <view class="title">链接</view>
+    <view class="content">
+      <cell clickable href="./setting/setting">
+        <view slot="label">设置</view>
+        <view slot="right-icon">
+          <image src="./icon-you.png" class="icon" />
+        </view>
+      </cell>
+    </view>
+  </view>
+
+  <view class="demo">
+    <view class="title">自定义样式</view>
+    <view class="content">
+      <cell custom-class="cell-custom">
+        <view slot="label">设置</view>
+        <view slot="right-icon">
+          <image src="./icon-you.png" class="icon" />
+        </view>
+      </cell>
+      <cell custom-class="cell-custom2">
+        <view slot="label">设置</view>
+        <view slot="right-icon">
+          <image src="./icon-you.png" class="icon" />
+        </view>
+      </cell>
+      <cell icon-class="cell-icon" right-icon-class="cell-right-icon" center>
+        <view slot="icon">
+          <image src="./icon-tuku.png" class="icon" />
+        </view>
+        <view slot="label">普通会员</view>
+        <view>前往升级</view>
+        <view slot="right-icon">
+          <image src="./icon-you.png" class="icon" />
+        </view>
+      </cell>
+    </view>
+  </view>
+</view>

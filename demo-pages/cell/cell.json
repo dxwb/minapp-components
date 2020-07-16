@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Cell单元格",
+  "navigationBarBackgroundColor": "#f5f5f5",
+  "usingComponents": {
+    "cell": "/components/cell/cell"
+  }
+}
