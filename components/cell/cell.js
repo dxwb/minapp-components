@@ -19,12 +19,13 @@ Component({
   },
   methods: {
     onClick(){
-      if(this.data.href){
-        wx[this.data.linkType]({
-          url: this.data.href
+      const { href, linkType } = this.data
+
+      this.triggerEvent('click')
+      if(href){
+        wx[linkType]({
+          url: href
         })
-      }else{
-        this.triggerEvent('click')
       }
     }
   },
