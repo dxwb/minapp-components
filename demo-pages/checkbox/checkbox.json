@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#f5f5f5",
+  "usingComponents": {
+    "cg": "/components/checkbox-group/checkbox-group",
+    "c": "/components/checkbox/checkbox"
+  }
+}

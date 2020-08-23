@@ -12,14 +12,18 @@ Component({
   },
   methods: {
     onChange(){
-      const value = !this.data.value
+      const { disabled, value } = this.data
+
+      if (disabled) return
+
+      const newValue = !value
       const parent = this.getRelationNodes('../checkbox-group/checkbox-group')[0]
       
       if(parent){
-        this.setParentValue(parent, value)
+        this.setParentValue(parent, newValue)
       }else{
         // 没有父级checkboxGroup
-        this.triggerEvent('change', value)
+        this.triggerEvent('change', newValue)
       }
     },
     setParentValue(parent, value){

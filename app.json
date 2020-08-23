@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "demo-pages/cell/cell",
-    "demo-pages/cell/setting/setting"
+    "demo-pages/cell/setting/setting",
+    "demo-pages/checkbox/checkbox"
   ],
   "window": {
     "backgroundTextStyle": "light",

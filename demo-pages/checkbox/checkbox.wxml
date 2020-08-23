@@ -1,0 +1,68 @@
+<view class="demo-list">
+  <view class="demo">
+    <view class="title">基本用法</view>
+    <view class="content">
+      <cg value="{{value1}}" bindchange="changeValue1">
+        <c name="1" checked-class="checkbox1-checked">
+          <view class="checkbox1">
+            <view class="iconfont icon-fuxuankuang icon"></view>
+            <view class="iconfont icon-fuxuanzhong icon-active"></view>
+            <text>复选框</text>
+          </view>
+        </c>
+      </cg>
+    </view>
+  </view>
+
+  <view class="demo">
+    <view class="title">禁用状态</view>
+    <view class="content">
+      <cg value="{{value2}}" bindchange="changeValue2">
+        <c
+          disabled
+          name="1"
+          custom-class="checkbox1-custom"
+          checked-class="checkbox1-checked"
+          disabled-class="checkbox1-disabled">
+          <view class="checkbox1">
+            <view class="iconfont icon-fuxuankuang icon"></view>
+            <view class="iconfont icon-fuxuanzhong icon-active"></view>
+            <text>复选框</text>
+          </view>
+        </c>
+        <c
+          disabled
+          name="2"
+          custom-class="checkbox1-custom"
+          checked-class="checkbox1-checked"
+          disabled-class="checkbox1-disabled">
+          <view class="checkbox1">
+            <view class="iconfont icon-fuxuankuang icon"></view>
+            <view class="iconfont icon-fuxuanzhong icon-active"></view>
+            <text>复选框</text>
+          </view>
+        </c>
+      </cg>
+    </view>
+  </view>
+
+  <view class="demo">
+    <view class="title">其他用法</view>
+    <view class="content">
+      <cg value="{{value3}}" bindchange="changeValue3">
+        <view class="checkbox3-wrap">
+          <view class="checkbox3-item" wx:for="{{value3List}}" wx:key="{{item.id}}">
+            <c
+              name="{{item.id}}"
+              checked-class="checkbox3-checked">
+              <view class="checkbox3">
+                <text>{{item.label}}</text>
+              </view>
+            </c>
+          </view>
+          <view class="checkbox3-item"></view>
+        </view>
+      </cg>
+    </view>
+  </view>
+</view>

@@ -6,4 +6,11 @@
     <view slot="label">Cell</view>
     <view>单元格</view>
   </cell>
+  <cell
+    clickable
+    href="/demo-pages/checkbox/checkbox"
+    custom-class="cell-custom">
+    <view slot="label">Checkbox</view>
+    <view>复选框</view>
+  </cell>
 </view>

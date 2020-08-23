@@ -1,0 +1,60 @@
+@import '/public/wxss/iconfont.wxss';
+@import '/public/wxss/demo-page.wxss';
+
+.content{
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.checkbox1{
+  display: flex;
+  align-items: center;
+}
+
+.checkbox1 .iconfont{
+  display: none;
+  margin-right: 20rpx;
+  font-size: 40rpx;
+  color: #6cf;
+}
+.checkbox1 .icon{
+  color: #ccc;
+}
+.checkbox1 .icon,
+.checkbox1-checked .icon-active{
+  display: block;
+}
+.checkbox1-checked .icon{
+  display: none;
+}
+
+.checkbox1-custom{
+  margin-bottom: 10rpx;
+}
+
+.checkbox1-disabled text,
+.checkbox1-disabled .iconfont{
+  color: #ccc;
+}
+
+.checkbox3-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.checkbox3-item{
+  margin-bottom: 20rpx;
+  width: 30%;
+}
+.checkbox3-item:empty{
+  margin-bottom: 0;
+}
+.checkbox3{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  line-height: 80rpx;
+  text-align: center;
+}
+.checkbox3-checked .checkbox3{
+  border-color: #6cf;
+}
