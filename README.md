@@ -35,3 +35,45 @@
 | icon-class       | 左icon样式类 |
 | right-icon-class | 右icon样式类 |
 
+## Checkbox 复选框
+
+### CheckboxGroup Props
+
+|参数|类型|说明|
+|-|-|-|
+|value| Array = <span style="color:#999;">[]</span>|所有选中项的 name|
+
+### CheckboxGroup Event
+
+|事件名|说明|参数|
+|-|-|-|
+|bind:change|当绑定值变化时触发的事件|当前组件的值|
+
+
+### Checkbox Props
+
+|参数|类型|说明|
+|-|-|-|
+|name| Array = <span style="color:#999;">[]</span>|标识 Checkbox 名称|
+|value| Array = <span style="color:#999;">false</span>|是否为选中状态|
+|disabled| Array = <span style="color:#999;">false</span>|是否禁用|
+
+### Checkbox Event
+
+|事件名|说明|参数|
+|-|-|-|
+|bind:change|当绑定值变化时触发的事件|当前组件的值|
+
+### Checkbox Slot
+
+|名称|说明|
+|-|-|
+|-|任意wxml元素|
+
+### Checkbox 外部样式类
+
+|类名|说明|
+|-|-|
+|custom-class|根节点样式类|
+|checked-class|选中时拥有的类名|
+|disabled-class|禁用时拥有的类名|
