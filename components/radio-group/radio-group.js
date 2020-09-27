@@ -3,7 +3,7 @@ Component({
     '../radio/radio': {
       type: 'descendant',
       linked(target){
-        const {value, disabled} = this.data
+        const { value, disabled } = this.data
         target.setData({
           value,
           disabled
@@ -28,6 +28,7 @@ Component({
       })
     },
     disabled(val){
+      if (!val) return
       const children = this.getRelationNodes('../radio/radio')
       children.forEach(el => {
         el.setData({
