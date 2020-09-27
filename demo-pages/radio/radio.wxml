@@ -1,0 +1,73 @@
+<view class="demo-list">
+  <view class="demo">
+    <view class="title">基本用法</view>
+    <view class="content">
+      <rg value="{{value1}}" bindchange="changeValue1">
+        <r name="1" checked-class="radio-checked">
+          <view class="radio">
+            <view class="iconfont icon-fuxuankuang icon"></view>
+            <view class="iconfont icon-fuxuanzhong icon-active"></view>
+            <text>男</text>
+          </view>
+        </r>
+        <r name="2" checked-class="radio-checked">
+          <view class="radio">
+            <view class="iconfont icon-fuxuankuang icon"></view>
+            <view class="iconfont icon-fuxuanzhong icon-active"></view>
+            <text>女</text>
+          </view>
+        </r>
+      </rg>
+    </view>
+  </view>
+
+  <view class="demo">
+    <view class="title">禁用状态</view>
+    <view class="content">
+      <rg value="{{value2}}" disabled bindchange="changeValue2">
+        <r
+          name="1"
+          custom-class="radio-custom"
+          checked-class="radio-checked"
+          disabled-class="radio-disabled">
+          <view class="radio">
+            <view class="iconfont icon-fuxuankuang icon"></view>
+            <view class="iconfont icon-fuxuanzhong icon-active"></view>
+            <text>单选框</text>
+          </view>
+        </r>
+        <r
+          name="2"
+          custom-class="radio-custom"
+          checked-class="radio-checked"
+          disabled-class="radio-disabled">
+          <view class="radio">
+            <view class="iconfont icon-fuxuankuang icon"></view>
+            <view class="iconfont icon-fuxuanzhong icon-active"></view>
+            <text>单选框</text>
+          </view>
+        </r>
+      </rg>
+    </view>
+  </view>
+
+  <view class="demo">
+    <view class="title">其他用法</view>
+    <view class="content">
+      <rg value="{{value3}}" bindchange="changeValue3">
+        <view class="radio2-wrap">
+          <view class="radio2-item" wx:for="{{value2List}}" wx:key="id">
+            <r
+              name="{{item.id}}"
+              checked-class="radio2-checked">
+              <view class="radio2">
+                <text>{{item.label}}</text>
+              </view>
+            </r>
+          </view>
+          <view class="radio2-item"></view>
+        </view>
+      </rg>
+    </view>
+  </view>
+</view>

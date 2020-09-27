@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#f5f5f5",
+  "usingComponents": {
+    "r": "/components/radio/radio",
+    "rg": "/components/radio-group/radio-group"
+  }
+}

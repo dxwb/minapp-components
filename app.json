@@ -3,7 +3,8 @@
     "pages/index/index",
     "demo-pages/cell/cell",
     "demo-pages/cell/setting/setting",
-    "demo-pages/checkbox/checkbox"
+    "demo-pages/checkbox/checkbox",
+    "demo-pages/radio/radio"
   ],
   "window": {
     "backgroundTextStyle": "light",

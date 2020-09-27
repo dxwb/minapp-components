@@ -13,4 +13,11 @@
     <view slot="label">Checkbox</view>
     <view>复选框</view>
   </cell>
+  <cell
+    clickable
+    href="/demo-pages/radio/radio"
+    custom-class="cell-custom">
+    <view slot="label">Radio</view>
+    <view>单选框</view>
+  </cell>
 </view>

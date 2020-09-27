@@ -17,9 +17,8 @@
   <view class="demo">
     <view class="title">禁用状态</view>
     <view class="content">
-      <cg value="{{value2}}" bindchange="changeValue2">
+      <cg value="{{value2}}" disabled bindchange="changeValue2">
         <c
-          disabled
           name="1"
           custom-class="checkbox1-custom"
           checked-class="checkbox1-checked"
@@ -31,7 +30,6 @@
           </view>
         </c>
         <c
-          disabled
           name="2"
           custom-class="checkbox1-custom"
           checked-class="checkbox1-checked"
@@ -51,7 +49,7 @@
     <view class="content">
       <cg value="{{value3}}" bindchange="changeValue3">
         <view class="checkbox3-wrap">
-          <view class="checkbox3-item" wx:for="{{value3List}}" wx:key="{{item.id}}">
+          <view class="checkbox3-item" wx:for="{{value3List}}" wx:key="id">
             <c
               name="{{item.id}}"
               checked-class="checkbox3-checked">

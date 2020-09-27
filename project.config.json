@@ -27,11 +27,11 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-		"useCompilerModule": true,
+		"useCompilerModule": false,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.12.0",
+	"libVersion": "2.13.0",
 	"appid": "wx130d18515f286a6f",
 	"projectname": "components-demo",
 	"debugOptions": {

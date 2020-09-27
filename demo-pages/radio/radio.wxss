@@ -1,0 +1,60 @@
+@import '/public/wxss/iconfont.wxss';
+@import '/public/wxss/demo-page.wxss';
+
+.content{
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.radio{
+  display: flex;
+  align-items: center;
+}
+
+.radio .iconfont{
+  display: none;
+  margin-right: 20rpx;
+  font-size: 40rpx;
+  color: #6cf;
+}
+.radio .icon{
+  color: #ccc;
+}
+.radio .icon,
+.radio-checked .icon-active{
+  display: block;
+}
+.radio-checked .icon{
+  display: none;
+}
+
+.radio-custom{
+  margin-bottom: 10rpx;
+}
+
+.radio-disabled text,
+.radio-disabled .iconfont{
+  color: #ccc;
+}
+
+.radio2-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.radio2-item{
+  margin-bottom: 20rpx;
+  width: 30%;
+}
+.radio2-item:empty{
+  margin-bottom: 0;
+}
+.radio2{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  line-height: 80rpx;
+  text-align: center;
+}
+.radio2-checked .radio2{
+  border-color: #6cf;
+}
