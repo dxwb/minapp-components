@@ -42,6 +42,7 @@
 |参数|类型|说明|
 |-|-|-|
 |value| Array = <span style="color:#999;">[]</span>|所有选中项的 name|
+|disabled| Boolean = <span style="color:#999;">false</span>|禁用所有选项|
 
 ### CheckboxGroup Event
 
@@ -55,8 +56,8 @@
 |参数|类型|说明|
 |-|-|-|
 |name| Array = <span style="color:#999;">[]</span>|标识 Checkbox 名称|
-|value| Array = <span style="color:#999;">false</span>|是否为选中状态|
-|disabled| Array = <span style="color:#999;">false</span>|是否禁用|
+|value| Boolean = <span style="color:#999;">false</span>|是否为选中状态|
+|disabled| Boolean = <span style="color:#999;">false</span>|是否禁用|
 
 ### Checkbox Event
 
@@ -71,6 +72,49 @@
 |-|任意wxml元素|
 
 ### Checkbox 外部样式类
+
+|类名|说明|
+|-|-|
+|custom-class|根节点样式类|
+|checked-class|选中时拥有的类名|
+|disabled-class|禁用时拥有的类名|
+
+## Radio 单选框
+
+### RadioGroup Props
+
+|参数|类型|说明|
+|-|-|-|
+|value|any|选中项的 name|
+|disabled| Boolean = <span style="color:#999;">false</span>|禁用所有选项|
+
+### RadioGroup Event
+
+|事件名|说明|参数|
+|-|-|-|
+|bind:change|当绑定值变化时触发的事件|当前组件的值|
+
+
+### Radio Props
+
+|参数|类型|说明|
+|-|-|-|
+|name| any |标识 Radio 名称|
+|disabled| Boolean = <span style="color:#999;">false</span>|是否禁用|
+
+### Radio Event
+
+|事件名|说明|参数|
+|-|-|-|
+|bind:change|当绑定值变化时触发的事件|当前组件的值|
+
+### Radio Slot
+
+|名称|说明|
+|-|-|
+|-|任意wxml元素|
+
+### Radio 外部样式类
 
 |类名|说明|
 |-|-|
