@@ -1,5 +1,5 @@
 # minapp-components
-微信小程序组件
+工作中简单封装的微信小程序组件
 
 ## Cell 单元格
 
