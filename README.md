@@ -158,4 +158,14 @@
 
 |名称|说明|
 |-|-|
-|-|任意wxml元素|
+|title|用于触发折叠切换事件的元素|
+|content|被折叠的元素|
+
+### CollapseItem 外部样式类
+
+|类名|说明|
+|-|-|
+|custom-class|根节点样式类|
+|custom-class-open|展开时的根节点样式类|
+|title-class|title slot的样式类|
+|content-class|content slot的样式类|
