@@ -34,4 +34,11 @@
     <view slot="label">Modal</view>
     <view>弹窗</view>
   </cell>
+  <cell
+    clickable
+    href="/demo-pages/ring-progress/ring-progress"
+    custom-class="cell-custom">
+    <view slot="label">RingProgress</view>
+    <view>环形进度条</view>
+  </cell>
 </view>

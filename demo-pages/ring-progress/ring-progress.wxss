@@ -1,0 +1,10 @@
+@import '/public/wxss/iconfont.wxss';
+@import '/public/wxss/demo-page.wxss';
+
+.content{
+  padding: 20rpx;
+}
+
+.percent{
+  font-size: 40rpx;
+}

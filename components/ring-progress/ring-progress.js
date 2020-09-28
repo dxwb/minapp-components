@@ -39,7 +39,7 @@ Component({
     innerColor: null
   },
   lifetimes: {
-    async attached(){
+    async ready(){
       await this.getContext()
       this.start()
     }
@@ -47,7 +47,6 @@ Component({
   methods: {
     start(){
       this.createColor()
-      // canvas.requestAnimationFrame(this.start.bind(this))
       this.draw()
     },
     draw(){
@@ -92,26 +91,24 @@ Component({
     getContext(){
       return new Promise(resolve => {
         const query = this.createSelectorQuery()
-        setTimeout(() => {
-          query.select('#ring')
-            .fields({node: true, size: true})
-            .exec(([res]) => {
-              const canvas = res.node
-              const ctx = canvas.getContext('2d')
-              const dpr = wx.getSystemInfoSync().pixelRatio
+        query.select('#ring')
+          .fields({node: true, size: true})
+          .exec(([res]) => {
+            const canvas = res.node
+            const ctx = canvas.getContext('2d')
+            const dpr = wx.getSystemInfoSync().pixelRatio
 
-              canvas.width = res.width * dpr
-              canvas.height = res.height * dpr
+            canvas.width = res.width * dpr
+            canvas.height = res.height * dpr
 
-              this.data.w = res.width
-              this.data.h = res.height
-              this.data.canvas = canvas
-              this.data.ctx = ctx
+            this.data.w = res.width
+            this.data.h = res.height
+            this.data.canvas = canvas
+            this.data.ctx = ctx
 
-              ctx.scale(dpr, dpr)
-              resolve()
-            })
-        }, 100)
+            ctx.scale(dpr, dpr)
+            resolve()
+          })
       })
     }
   },

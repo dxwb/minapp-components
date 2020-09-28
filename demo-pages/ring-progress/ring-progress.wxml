@@ -1,0 +1,31 @@
+<view class="demo-list">
+  <view class="demo">
+    <view class="title">基本用法</view>
+    <view class="content">
+      <ring-progress
+        width="{{200}}"
+        height="{{200}}"
+        percent="{{.4}}"
+        thickness="{{10}}"
+        gap="{{5}}"
+        color="#abc">
+        <view class="percent">40%</view>
+      </ring-progress>
+    </view>
+  </view>
+
+  <view class="demo">
+    <view class="title">进度条渐变</view>
+    <view class="content">
+      <ring-progress
+        width="{{200}}"
+        height="{{200}}"
+        percent="{{1}}"
+        thickness="{{10}}"
+        gap="{{5}}"
+        color="#f60;#6cf">
+        <view class="percent">100%</view>
+      </ring-progress>
+    </view>
+  </view>
+</view>

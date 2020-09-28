@@ -198,4 +198,30 @@
 |-|-|
 |custom-class|根节点样式类|
 |mask-class|遮罩样式类|
-|main-class|弹窗内容区域样式类（即content slot的父元素）|
+|main-class|弹窗内容区域样式类（即content slot的父节点）|
+
+## RingProgress 环形进度条
+
+### RingProgress Props
+
+|参数|类型|说明|
+|-|-|-|
+|width| Number = 100 |图形宽度|
+|height| Number = 100 |图形高度|
+|percent| Number = 0 |进度百分比|
+|thickness| Number = 16 |进度条厚度|
+|gap| Number = 4 |进度条与边缘的间隙|
+|color| String = '#000' |进度条颜色，支持渐变色，使用渐变色时，多个颜色由分号 ; 分隔，如：'#000;#fff;#abc'|
+
+### RingProgress Slot
+
+|名称|说明|
+|-|-|
+|-|图形中间的位置|
+
+### RingProgress 外部样式类
+
+|类名|说明|
+|-|-|
+|custom-class|根节点样式类|
+|inner-class|图形中间的位置样式类（即default slot的父节点）|

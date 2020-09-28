@@ -6,7 +6,8 @@
     "demo-pages/checkbox/checkbox",
     "demo-pages/radio/radio",
     "demo-pages/collapse/collapse",
-    "demo-pages/modal/modal"
+    "demo-pages/modal/modal",
+    "demo-pages/ring-progress/ring-progress"
   ],
   "window": {
     "backgroundTextStyle": "light",
