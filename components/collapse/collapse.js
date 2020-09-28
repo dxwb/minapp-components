@@ -13,7 +13,7 @@ Component({
   properties: {
     value: {
       type: null,
-      observer(){
+      observer () {
         this.children.forEach(child => {
           child.updateExpanded()
         })
@@ -21,7 +21,7 @@ Component({
     },
     accordion: {
       type: Boolean,
-      observer() {
+      observer () {
         this.children.forEach(child => {
           child.updateExpanded()
         })

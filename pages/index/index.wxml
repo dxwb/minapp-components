@@ -20,4 +20,11 @@
     <view slot="label">Radio</view>
     <view>单选框</view>
   </cell>
+  <cell
+    clickable
+    href="/demo-pages/collapse/collapse"
+    custom-class="cell-custom">
+    <view slot="label">Collapse</view>
+    <view>折叠面板</view>
+  </cell>
 </view>

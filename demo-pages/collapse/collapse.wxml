@@ -1,0 +1,17 @@
+<view class="demo-list">
+  <view class="demo">
+    <view class="title">基本用法</view>
+    <view class="content">
+      <collapse value="{{value1}}" bindchange="changeValue1">
+        <collapse-item name="1">
+          <cell slot="title" clickable>
+            <view slot="label">qwe</view>
+          </cell>
+          <view slot="content" class="collapse-content">
+            asd
+          </view>
+        </collapse-item>
+      </collapse>
+    </view>
+  </view>
+</view>

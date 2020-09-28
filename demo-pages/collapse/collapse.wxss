@@ -1,0 +1,6 @@
+@import '/public/wxss/iconfont.wxss';
+@import '/public/wxss/demo-page.wxss';
+
+.collapse-content{
+  background-color: #fff;
+}
