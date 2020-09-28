@@ -7,7 +7,8 @@
     "demo-pages/radio/radio",
     "demo-pages/collapse/collapse",
     "demo-pages/modal/modal",
-    "demo-pages/ring-progress/ring-progress"
+    "demo-pages/ring-progress/ring-progress",
+    "demo-pages/stepper/stepper"
   ],
   "window": {
     "backgroundTextStyle": "light",

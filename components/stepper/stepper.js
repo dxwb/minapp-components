@@ -49,7 +49,7 @@ Component({
       const diff = type === 'minus' ? -1 : 1
       const value = this.data.value + diff
       this.setInputVal(value)
-      this.triggerEvent(type)
+      this.triggerEvent(type, value)
     },
     setInputVal(value){
       (typeof value !== 'number') && (value = Number(value))

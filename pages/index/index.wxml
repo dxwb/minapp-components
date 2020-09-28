@@ -41,4 +41,11 @@
     <view slot="label">RingProgress</view>
     <view>环形进度条</view>
   </cell>
+  <cell
+    clickable
+    href="/demo-pages/stepper/stepper"
+    custom-class="cell-custom">
+    <view slot="label">Stepper</view>
+    <view>步进器</view>
+  </cell>
 </view>

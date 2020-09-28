@@ -225,3 +225,23 @@
 |-|-|
 |custom-class|根节点样式类|
 |inner-class|图形中间的位置样式类（即default slot的父节点）|
+
+## Stepper 步进器
+
+### Stepper Props
+
+|参数|类型|说明|
+|-|-|-|
+|value| Number |步进器值|
+|min| Number = 1 |最小值|
+|max| Number = `Number.MAX_SAFE_INTEGER` |最大值|
+|disabled| Boolean = false |是否禁用|
+|inputDisabled| Boolean = false |是否禁用输入框|
+
+### Stepper Event
+
+|事件名|说明|参数|
+|-|-|-|
+|bind:minus|点击减号后触发|减少后的值|
+|bind:plus|点击加号后触发|增加后的值|
+|bind:change|改变值后触发|改变后的值|
