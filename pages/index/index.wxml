@@ -27,4 +27,11 @@
     <view slot="label">Collapse</view>
     <view>折叠面板</view>
   </cell>
+  <cell
+    clickable
+    href="/demo-pages/modal/modal"
+    custom-class="cell-custom">
+    <view slot="label">Modal</view>
+    <view>弹窗</view>
+  </cell>
 </view>

@@ -1,7 +1,6 @@
 {
   "navigationBarBackgroundColor": "#f5f5f5",
   "usingComponents": {
-    "cell": "/components/cell/cell",
     "collapse": "/components/collapse/collapse",
     "collapse-item": "/components/collapse-item/collapse-item"
   }

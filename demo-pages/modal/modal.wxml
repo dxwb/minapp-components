@@ -1,0 +1,32 @@
+<view class="demo-list">
+  <view class="demo">
+    <view class="title">基本用法</view>
+    <view class="content">
+      <button size="mini" bindtap="showModal1">给我弹！</button>
+      <modal show="{{modal1}}" bindclose="hideModal1">
+        Hello!
+      </modal>
+    </view>
+  </view>
+
+  <view class="demo">
+    <view class="title">设定内容位置</view>
+    <view class="content">
+      <button size="mini" bindtap="showModal2">上边</button>
+      <modal show="{{modal2}}" position="top" bindclose="hideModal2">
+        Hello!
+      </modal>
+      更多position选项请看文档
+    </view>
+  </view>
+
+  <view class="demo">
+    <view class="title">禁用动画</view>
+    <view class="content">
+      <button size="mini" bindtap="showModal3">给我弹！</button>
+      <modal show="{{modal3}}" use-animation="{{false}}" bindclose="hideModal3">
+        Hello!
+      </modal>
+    </view>
+  </view>
+</view>

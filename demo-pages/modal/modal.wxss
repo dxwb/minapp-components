@@ -1,0 +1,10 @@
+@import '/public/wxss/iconfont.wxss';
+@import '/public/wxss/demo-page.wxss';
+
+.content{
+  padding: 0 20rpx;
+}
+
+button{
+  background-color: #abc;
+}

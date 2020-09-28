@@ -169,3 +169,33 @@
 |custom-class-open|展开时的根节点样式类|
 |title-class|title slot的样式类|
 |content-class|content slot的样式类|
+
+## Modal 弹窗
+
+### Modal Props
+
+|参数|类型|说明|
+|-|-|-|
+|show| Boolean = false |是否显示|
+|position| ''\|'top'\|'left'\|'bottom'\|'right' |弹窗内容的位置|
+|useAnimation| Boolean = false |是否使用动画，为false时禁用动画|
+
+### Modal Event
+
+|事件名|说明|参数|
+|-|-|-|
+|bind:close|点击遮罩时触发|-|
+
+### Modal Slot
+
+|名称|说明|
+|-|-|
+|-|弹窗内容|
+
+### Modal 外部样式类
+
+|类名|说明|
+|-|-|
+|custom-class|根节点样式类|
+|mask-class|遮罩样式类|
+|main-class|弹窗内容区域样式类（即content slot的父元素）|

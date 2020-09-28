@@ -5,7 +5,8 @@
     "demo-pages/cell/setting/setting",
     "demo-pages/checkbox/checkbox",
     "demo-pages/radio/radio",
-    "demo-pages/collapse/collapse"
+    "demo-pages/collapse/collapse",
+    "demo-pages/modal/modal"
   ],
   "window": {
     "backgroundTextStyle": "light",
