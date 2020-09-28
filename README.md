@@ -22,8 +22,8 @@
 
 | 名称       | 说明                   |
 | ---------- | ---------------------- |
-| -          | 右对齐的flex: 1;的容器 |
-| label      | 左对齐的flex: 1;的容器 |
+| -          | 右对齐的`flex: 1;`的容器 |
+| label      | 左对齐的`flex: 1;`的容器 |
 | icon       | 左边icon位             |
 | right-icon | 右边icon位             |
 
@@ -94,7 +94,6 @@
 |-|-|-|
 |bind:change|当绑定值变化时触发的事件|当前组件的值|
 
-
 ### Radio Props
 
 |参数|类型|说明|
@@ -121,3 +120,42 @@
 |custom-class|根节点样式类|
 |checked-class|选中时拥有的类名|
 |disabled-class|禁用时拥有的类名|
+
+## Collapse 折叠面板
+
+### Collapse Props
+
+|参数|类型|说明|
+|-|-|-|
+|value| any |展开项的name，当`accordion`不为true时，此参数的类型应为数组|
+|accordion| Boolean = false |是否开启手风琴模式|
+
+### Collapse Event
+
+|事件名|说明|参数|
+|-|-|-|
+|bind:change|当绑定值变化时触发的事件|当前组件的值|
+
+### Collapse Slot
+
+|名称|说明|
+|-|-|
+|-|任意wxml元素|
+
+### CollapseItem Props
+
+|参数|类型|说明|
+|-|-|-|
+|name| any |标识 CollapseItem 名称|
+
+### CollapseItem Event
+
+|事件名|说明|参数|
+|-|-|-|
+|bind:transitionend|展开或收起动画完成时触发|当前组件实例|
+
+### CollapseItem Slot
+
+|名称|说明|
+|-|-|
+|-|任意wxml元素|

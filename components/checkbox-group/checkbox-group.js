@@ -10,7 +10,7 @@ Component({
     }
   },
   observers: {
-    value(val){
+    value (val) {
       const children = this.getRelationNodes('../checkbox/checkbox')
       children.forEach(el => {
         el.setData({
@@ -18,7 +18,7 @@ Component({
         })
       })
     },
-    disabled(val){
+    disabled (val) {
       if (!val) return
       const children = this.getRelationNodes('../checkbox/checkbox')
       children.forEach(el => {

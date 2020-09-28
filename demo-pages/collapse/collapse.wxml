@@ -4,11 +4,39 @@
     <view class="content">
       <collapse value="{{value1}}" bindchange="changeValue1">
         <collapse-item name="1">
-          <cell slot="title" clickable>
-            <view slot="label">qwe</view>
-          </cell>
+          <view slot="title" class="cell">静夜思</view>
           <view slot="content" class="collapse-content">
-            asd
+            <view>床前明月光，疑是地上霜。</view>
+            <view>举头望明月，低头思故乡。</view>
+          </view>
+        </collapse-item>
+        <collapse-item name="2">
+          <view slot="title" class="cell">早发白帝城</view>
+          <view slot="content" class="collapse-content">
+            <view>朝辞白帝彩云间，千里江陵一日还。</view>
+            <view>两岸猿声啼不住，轻舟已过万重山。</view>
+          </view>
+        </collapse-item>
+      </collapse>
+    </view>
+  </view>
+
+  <view class="demo">
+    <view class="title">手风琴模式</view>
+    <view class="content">
+      <collapse value="{{value2}}" accordion bindchange="changeValue2">
+        <collapse-item name="1">
+          <view slot="title" class="cell">静夜思</view>
+          <view slot="content" class="collapse-content">
+            <view>床前明月光，疑是地上霜。</view>
+            <view>举头望明月，低头思故乡。</view>
+          </view>
+        </collapse-item>
+        <collapse-item name="2">
+          <view slot="title" class="cell">早发白帝城</view>
+          <view slot="content" class="collapse-content">
+            <view>朝辞白帝彩云间，千里江陵一日还。</view>
+            <view>两岸猿声啼不住，轻舟已过万重山。</view>
           </view>
         </collapse-item>
       </collapse>
